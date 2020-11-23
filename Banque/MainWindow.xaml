@@ -1,0 +1,18 @@
+﻿<Window x:Class="Banque.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Banque"
+        mc:Ignorable="d"
+        Title="Banque ChingChing" Height="272.395" Width="905.322" ResizeMode="NoResize"  >
+    <Grid Background="LightGray">
+        <Label Content="Nom d'utilisateur:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="65,59,0,0" Width="262"/>
+        <Label Content="Mot de passe:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="66,88,0,0" Width="262"/>
+        <TextBox x:Name="TxtUtilisateur" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="247" Margin="252,62,0,0" TextChanged="TxtUtilisateur_TextChanged"/>
+        <PasswordBox x:Name="pswdBox" HorizontalAlignment="Left" PasswordChar="*" Height="23" Width="245" Margin="253,92,0,0" VerticalAlignment="Top" />
+        <Button x:Name="BtnOk" Content="Ok" HorizontalAlignment="Left" Margin="58,190,0,0" VerticalAlignment="Top" Width="84" Click="btnOk_Click" IsEnabled="False" IsDefault="True"/>
+        <Button x:Name="BtnQuitter" Content="Quitter" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="707,193,0,0" Click="BtnQuitter_Click"/>
+
+    </Grid>
+</Window>
